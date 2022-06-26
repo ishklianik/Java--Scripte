@@ -1,6 +1,6 @@
 
 
-[{
+let users = [ {
     "name": "Leanne Graham",
     "username": "Bret",
     "email": "Sincere@april.biz",
@@ -12,16 +12,17 @@
         "geo": {
             "lat": "-37.3159",
             "lng": "81.1496"
-        }
-    },
+               }
+                },
     "phone": "1-770-736-8031 x56442",
     "website": "hildegard.org",
     "company": {
         "name": "Romaguera-Crona",
         "catchPhrase": "Multi-layered client-server neural-net",
         "bs": "harness real-time e-markets"
-    }
-},
+               }
+ } 
+,
 {
     "name": "Clementine Bauch",
     "username": "Samantha",
@@ -353,3 +354,29 @@
     }
 }
 ]
+
+
+
+
+// 
+// fetch('.users.json')
+// .then(res=> res.json())
+// .then(data => console.log (data))
+
+// users=JSON.parse(users)
+// console.log(users)
+
+let users1=JSON.stringify(users)
+users2=JSON.parse(users1)
+
+// console.log(users2)
+//  new Set(users2)
+//  Array.from(new Set(users2))
+// for (i=0; i<users2.length; i++)
+// console.log(users2.length)
+// console.log(users2[i].name)
+function unique(users2) {return Array.from(new Set(users2))}
+// console.log(Array.from(new Set(users2)))
+
+unique(users2)
+console.log(unique(users2))
